@@ -1,0 +1,2 @@
+# Void-Newspaper
+A newspaper.
