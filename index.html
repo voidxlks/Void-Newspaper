@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VoidXLKS Times</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-color: #f4f1ea;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid black;
+    background: #fff;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+header p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.main-article {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.main-article h2 {
+    font-size: 32px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid black;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.link-blade {
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 65%;
+    border: 1px solid #000;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkred;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>VOIDXLKS TIMES</h1>
+    <p>Breaking Stories • Digital Mysteries • Code & Chaos</p>
+</header>
+
+<div class="container">
+
+    <div class="main-article">
+        <h2>The Link Blade Mystery Emerges</h2>
+        <p><strong>By Digital Correspondent</strong></p>
+
+        <p>
+        A new development in the growing <strong>VoidXLKS</strong> phenomenon has caught
+        the attention of online explorers. Deep within hidden directories and layered
+        pages, references to something called the <em>“Link Blade”</em> have begun
+        to surface.
+        </p>
+
+        <p>
+        The Link Blade is rumored to be connected to a larger system known as the
+        <strong>“Typhoon Blade.”</strong> Investigators believe it acts as a gateway,
+        allowing users to move between unknown parts of the system — but only if
+        the correct path is entered.
+        </p>
+
+        <p>
+        Unlike normal links, this system does not guide you. You must choose your
+        destination yourself. Some say entering the wrong link leads nowhere…
+        others say it leads somewhere you weren’t meant to go.
+        </p>
+
+        <p>
+        “It doesn’t take you somewhere,” one user claimed. “It decides if you’re
+        allowed to go.”
+        </p>
+
+        <!-- LINK BLADE INPUT -->
+        <div class="link-blade">
+            <input type="text" id="linkInput" placeholder="Enter Link Blade URL...">
+            <button onclick="goToLinkBlade()">Follow</button>
+        </div>
+
+    </div>
+
+    <div class="sidebar">
+        <div class="box">
+            <h3>Latest News</h3>
+            <ul>
+                <li>Hidden Page Discovered</li>
+                <li>Typhoon Blade Mentioned Again</li>
+                <li>Users Report Redirect Glitches</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3>Editor's Note</h3>
+            <p>
+            “Every system has a key. The question is… who holds it?”
+            </p>
+        </div>
+
+        <div class="box">
+            <h3>Archives</h3>
+            <p>March 2026</p>
+            <p>February 2026</p>
+            <p>January 2026</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>© 2026 VoidXLKS Times • All Rights Reserved</p>
+</div>
+
+<script>
+function goToLinkBlade() {
+    let url = document.getElementById("linkInput").value;
+
+    if (url) {
+        if (!url.startsWith("http://") && !url.startsWith("https://")) {
+            url = "https://" + url;
+        }
+
+        window.location.href = url;
+    }
+}
+</script>
+
+</body>
+</html>
